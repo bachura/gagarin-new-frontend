@@ -1,0 +1,197 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.directions_img {
+		margin: 0 10px;
+	}
+}
+
+/* Ipad Pro Devices, Desktops */
+@media only screen and (max-width : 1024px) {
+	.nav li a {
+		font-size: 11px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+/*	.logo_mobile {
+		display: block;
+		background: url(../img/logo_mobile.png);
+		margin-top: 25px;
+		width: 100px;
+		height: 38px;
+	}*/
+	video {
+		display: none;
+	}
+	.nav {
+		display: none;
+	}
+	.showNav {
+		background: transparent !important;
+	}
+	.open	{
+		position: fixed;
+		z-index: 1000;
+		background: rgba(0,0,0,.4);
+		display: block;
+	}
+	/*.logo {
+		display: none;
+	}*/
+	.nav_button {
+		text-align: right;
+		float: right;
+		font-size: 11px;
+		text-transform: uppercase;
+		background: transparent;
+		padding: 8px 15px;
+		margin-top: 20px;
+	}
+	section {
+		padding: 20px 0;
+	}
+
+	/*Popup*/
+	#modal_close{
+		top: 10px;
+		right: 30px;
+	}
+	.mymagicoverbox_fenetre h2 {
+		font-size: 18px;
+		padding-top: 40px;
+	}
+	.mymagicoverbox_fenetre p {
+		font-size: 11px;
+		padding: 0 10px;
+	}
+	.mymagicoverbox_fenetre {
+		width: 316px;
+		left: -158px;
+		z-index: 9999 !important;
+		position: fixed;
+		margin-left: 50%;
+	}
+	.mymagicoverbox_fenetreinterieur {
+		max-height: 300px;
+	}
+	.mymagicoverbox_fenetreinterieur input {
+		text-align: left;
+		padding-top: 10px;
+		margin-bottom: 5px;
+		font-size: 11px;
+		width: 100%;
+	}
+	.mymagicoverbox_fenetreinterieur textarea {
+		font-size: 11px;
+		width: 100%;
+		min-height: 60px;
+	}
+	.mymagicoverbox_fenetreinterieur .btn_form {
+		text-align: center;
+		font-size: 15px;
+		padding: 5px 50px;
+		margin-top: 25px;
+	}
+	#box_3 p {
+		font-size: 10px
+	}
+	#box_3 .btn_form {
+		margin-top: 10px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 993px) {
+	video{
+		display: block;
+	}
+	.nav{
+		display: block;
+	}
+	.open {
+		display: none;
+	}
+	/*.logo {
+		display: block;
+	}
+	.logo_modile {
+		display: none;
+	}*/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+@media only screen and (max-width: 500px), (min-device-width: 768px) and (max-device-width: 1024px) {
+
+		/* Заставьте таблицу больше не вести себя как таблица */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+	
+		/* Скройте заголовки таблицы (но в целях доступности не с display: none;) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+	
+		tr { border: 1px solid #ccc; }
+	
+		td { 
+			/* Поведение как у «строки» */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+	
+		td:before { 
+			/* Теперь как у заголовка таблицы */
+			position: absolute;
+			/* Значения top/left имитируют отступ */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+	}
