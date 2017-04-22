@@ -2,8 +2,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	.directions_img {
-		margin: 0 10px;
+	.base:before{
+		display: none;
 	}
 }
 

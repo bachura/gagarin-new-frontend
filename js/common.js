@@ -67,6 +67,24 @@ $(document).ready(function() {
 	  	$(".showNav").css("background", "#021246");
 	  }
 	});
+
+	// Readmore
+	$('article').readmore({
+		speed: 200,
+		maxHeight: 750
+	});
 	
-	
+
+// Acordeon 	
+	$('#acordeon .headerAcc').click(function() {			
+		if(!$(this).siblings('#acordeon .contentAcc').is(":visible")){
+			$('#acordeon').find('.contentAcc').slideUp();
+			$('#acordeon').find('.headerAcc').removeClass("selected");
+			$(this).siblings('.contentAcc').slideDown();
+			$(this).addClass("selected");
+		}			
+		return false;
+	});	
+
+
 }); 
