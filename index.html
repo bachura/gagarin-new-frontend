@@ -65,14 +65,143 @@
 				<div class="col-xs-12">
 					<h1>Научись верстать сайты <br>и получи профессию front-end разработчика за 42 часа по самой доступной цене</h1>
 					<div class="button_header">
-						<button class="button_gradient">Записаться на бесплатный урок</button>
+						<button iddiv="box_2" class="mymagicoverbox button_gradient" href="#">Записаться на бесплатный урок</button>
 						<p>Старт занятий 16 мая. Осталось 3 места.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-		
+
+	<!-- pop up -->
+	<div align="center" id="pop__up"> 
+	<div id="myfond_gris" opendiv=""></div>
+
+		<div class="container">
+		<div class="row">
+		<div class="col-sm-8">	
+
+			<div id="box_1" class="mymagicoverbox_fenetre">
+				<div class="row">
+					<div class="col-sm-1 col-sm-push-11">
+						<span id="modal_close"></span>	
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Бесплатная консультация</h2>
+						<p>Наш консультант свяжется с вами в ближайшее время.</p>	
+						<div class="mymagicoverbox_fenetreinterieur">
+						<div align="center">
+							<form action="send_consultation.php" method="post">
+								<div class="col-xs-12 col-sm-5 col-sm-push-1">
+									<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+									<input type="email" name="email" placeholder="Ваша почта" id="email" required>
+									<input type="number" name="phone" id="phone" placeholder="Ваш телефон" required>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<textarea name="message" placeholder="Сообщение" required></textarea>
+								</div>
+								<button class="btn_form" target="_blank">Получить консультацию</button>
+							</form>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		</div>
+		</div>
+
+	</div> <!-- pop up -->
+
+	<!-- pop up -->
+	<div align="center" id="pop__up"> 
+	<div id="myfond_gris" opendiv=""></div>
+
+		<div class="container">
+		<div class="row">
+		<div class="col-sm-8">	
+
+			<div id="box_2" class="mymagicoverbox_fenetre">
+				<div class="row">
+					<div class="col-sm-1 col-sm-push-11">
+						<span id="modal_close"></span>	
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Записаться на бесплатный урок</h2>
+						<p>Наш консультант свяжется с вами в ближайшее время.</p>	
+						<div class="mymagicoverbox_fenetreinterieur">
+						<div align="center">
+							<form action="send_free_lesson.php" method="post">
+								<div class="col-xs-12 col-sm-5 col-sm-push-1">
+									<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+									<input type="email" name="email" placeholder="Ваша почта" id="email" required>
+									<input type="number" name="phone" id="phone" placeholder="Ваш телефон" required>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<textarea name="message" placeholder="Сообщение" required></textarea>
+								</div>
+								<button class="btn_form" target="_blank">Записаться</button>
+							</form>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		</div>
+		</div>
+
+	</div> <!-- pop up -->
+
+		<!-- pop up -->
+	<div align="center" id="pop__up"> 
+	<div id="myfond_gris" opendiv=""></div>
+
+		<div class="container">
+		<div class="row">
+		<div class="col-sm-8">	
+
+			<div id="box_3" class="mymagicoverbox_fenetre">
+				<div class="row">
+					<div class="col-sm-1 col-sm-push-11">
+						<span id="modal_close"></span>	
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Записаться на обучение</h2>
+						<p>Наш консультант свяжется с вами в ближайшее время.</p>	
+						<div class="mymagicoverbox_fenetreinterieur">
+						<div align="center">
+							<form action="send_education.php" method="post">
+								<div class="col-xs-12 col-sm-5 col-sm-push-1">
+									<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+									<input type="email" name="email" placeholder="Ваша почта" id="email" required>
+									<input type="number" name="phone" id="phone" placeholder="Ваш телефон" required>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<textarea name="message" placeholder="Сообщение" required></textarea>
+								</div>
+								<button class="btn_form" target="_blank">Записаться</button>
+							</form>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		</div>
+		</div>
+
+	</div> <!-- pop up -->
+
 	<section class="about_frontend">
 		<div class="container">
 			<div class="row">
@@ -139,8 +268,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8 col-md-push-2">
-
+			<div class="col-md-8 col-md-push-2">
 				<ul class="program_list">
 					<li>
 						<input type="checkbox" checked>
@@ -211,9 +339,9 @@
 				</ul>
 
 				<div class="button_program">
-					<button class="button_gradient">Записаться на бесплатный урок</button>
+					<button iddiv="box_2" class="mymagicoverbox button_gradient" href="#">Записаться на бесплатный урок</button>
 				</div>
-				</div>
+			</div>
 			</div>
 		</div>
 	</section>
@@ -435,7 +563,7 @@
 			<div class="row">
 				<h1>Более 250 клиентов доверили нам <br>своё обучение</h1>
 				<div class="button_program">
-					<button class="button_gradient">Записаться на обучение</button>
+					<button iddiv="box_3" class="mymagicoverbox button_gradient" href="#">Записаться на обучение</button>
 				</div>
 			</div>
 		</div>
@@ -582,13 +710,13 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6"></div>
-				<div class="col-md-2 button_economy">
+				<div class="col-md-2 price_economy">
 					<p>1 800 грн <br>месяц</p>
 				</div>
-				<div class="col-md-2 button_base">
+				<div class="col-md-2 price_base">
 					<p>2 100 грн <br>месяц</p>
 				</div>
-				<div class="col-md-2 button_full">
+				<div class="col-md-2 price_full">
 					<p>3 300 грн <br>месяц</p>
 				</div>
 			</div>
@@ -608,7 +736,7 @@
 				</div>
 				<div class="col-md-4">
 					<p>Дарим HTML/CSS справочник <br>для более быстрого обучения вёрстки!<br><br>Оставьте нам почту, куда вы хотите <br>получить подарок.</p>
-					<form action="">
+					<form action="send_present.php" method="post">
 						<input type="name" name="name" placeholder="Ваше имя" require>
 						<input type="email" name="email" placeholder="Ваш E-mail" require>
 						<button>Забрать подарок</button>
@@ -783,6 +911,7 @@
 	<script src="libs/readmore/readmore.min.js"></script>
 	<script src="libs/page-scroll-to-id/jquery.malihu.PageScroll2id.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="https://b24go.com/form/v1/gagarinit.bitrix24.ua/form.js" async></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

@@ -728,24 +728,20 @@ dt {
     font-size: 21px;
     color: #1d70b8; }
 
-.button_economy,
-.button_base,
-.button_full {
+.price_economy,
+.price_base,
+.price_full {
   padding: 15px;
   font-size: 25px;
   color: #fff;
   line-height: 1;
   text-align: center;
   background: #00ade4;
-  border-right: 4px solid #fff;
-  border-top: 4px solid #fff;
-  cursor: pointer; }
-  .button_economy:hover,
-  .button_base:hover,
-  .button_full:hover {
-    background: #009bcd; }
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-top: 4px solid #fff; }
 
-.button_full {
+.price_full {
   border-right: none; }
 
 .present_form {
