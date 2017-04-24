@@ -90,6 +90,8 @@ nav
 	height: 110px
 	transition: all 0.2s linear
 	z-index: 30
+
+// Fixed nav top ----------------- */
 .showNav
 	top: 0
 	z-index: 30
@@ -98,6 +100,7 @@ nav
 	top: -120px
 	background: transparent
 
+// Nav header ----------------- */
 .header_list
 	padding-top: 30px 
 	text-align: center
@@ -148,7 +151,141 @@ nav
 	&:hover
 		background: #00ccff * 0.9 
 
-// Pop up
+
+/* Burger ----------------- */
+.open 
+	position: absolute
+	top: 10px
+	left: 20px
+	width: 50px
+	height: 50px
+	display: none
+	cursor: pointer
+	-webkit-transition: opacity 0.2s linear
+	transition: opacity 0.2s linear 
+
+	&:hover 
+		opacity: 1 
+	span 
+		display: block
+		float: left
+		clear: both
+		height: 4px
+		width: 40px
+		border-radius: 40px
+		background-color: #1b7395
+		position: absolute
+		right: 5px
+		top: 3px
+		overflow: hidden
+		-webkit-transition: all 0.4s ease
+		transition: all 0.4s ease 
+		&:nth-child(1) 
+			margin-top: 5px
+			z-index: 9 
+		&:nth-child(2) 
+			margin-top: 20px 
+		&:nth-child(3) 
+			margin-top: 35px 
+
+.sub-menu 
+	-webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+	transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+	height: 0
+	width: 0
+	right: 0
+	top: 0
+	position: absolute
+	background-color: rgba(31, 31, 31, 0.9)
+	border-radius: 50% 0 50%
+	z-index: 18
+	overflow: hidden 
+	li 
+		display: block
+		float: left
+		clear: both
+		height: auto
+		margin-left: 80px
+		-webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+		transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 
+		&:first-child 
+			margin-top: 180px
+		&:nth-child(1) 
+			-webkit-transition-delay: 0.05s 
+		&:nth-child(2) 
+			-webkit-transition-delay: 0.1s 
+		&:nth-child(3) 
+			-webkit-transition-delay: 0.15s 
+		&:nth-child(4) 
+			-webkit-transition-delay: 0.2s 
+		&:nth-child(5) 
+			-webkit-transition-delay: 0.25s 
+		a 
+			color: #fff
+			font-size: 13px
+			width: 220px
+			display: block
+			float: left
+			padding: 2px
+			&:active 
+				color: #29abe2 
+			&:first-child 
+				margin-top: 5px 
+			&:last-child 
+				font-size: 18px
+				font-weight: 700
+	
+.oppenned 
+	.sub-menu 
+		opacity: 1
+		height: auto
+		width: 400px
+		padding-bottom: 40px 
+	span
+		&:nth-child(2) 
+			overflow: visible 
+		&:nth-child(1),
+		:nth-child(3) 
+			z-index: 100
+			-webkit-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			transform: rotate(45deg) 
+		&:nth-child(1) 
+			-webkit-transform: rotate(45deg) translateY(12px) translateX(12px)
+			-ms-transform: rotate(45deg) translateY(12px) translateX(12px)
+			transform: rotate(45deg) translateY(12px) translateX(12px) 
+		&:nth-child(2) 
+			height: 400px
+			width: 400px
+			right: -240px
+			top: -160px
+			border-radius: 50%
+			background-color: rgba(252, 252, 252, 0) 
+		&:nth-child(3) 
+			-webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px)
+			-ms-transform: rotate(-45deg) translateY(-10px) translateX(10px)
+			transform: rotate(-45deg) translateY(-10px) translateX(10px) 
+	li 
+		margin-right: 168px 
+.sub-menu 
+	.block__main_text 
+		padding-top: 15px
+		width: 160px
+.burger_text 
+	color: #fff
+	width: 200px
+	p
+		margin: 0
+		padding-top: 20px
+		padding-bottom: 5px
+.burger_button
+	background: $main-color
+	border: none
+	padding: 8px 15px
+	border-radius: 5px
+	color: #fff
+
+/* Pop up ----------------- */
 #modal_close
 	position: absolute
 	right: 30px
@@ -255,7 +392,7 @@ textarea
 		transition: ease .3s
 		background: #020740 * 0.9
 
-// about frontend
+/* About frontend ----------------- */
 .about_frontend
 	padding: 0
 	margin-top: 40px
@@ -279,7 +416,7 @@ textarea
 	height: 459px !important
 	text-align: center
 
-// frontend info
+/* Frontend info ----------------- */
 .frontend_info
 	background: url(../img/bg_frontend_info.jpg) no-repeat center center
 	background-size: cover
@@ -311,7 +448,7 @@ textarea
 			height: 53px
 
 
-//course program
+/*  Course program ----------------- */
 .bg_program
 	background: #f8f8f8
 	h2
@@ -466,7 +603,7 @@ dt
 			font-family: "OpenSans-Bold", sans-serif 
 
 
-// Our plus
+/* Our plus ----------------- */
 .bg_plus
 	background: url(../img/bg_plus.jpg)
 	background-size: cover
@@ -493,7 +630,7 @@ dt
 		color: #fff
 		line-height: 1.2
 
-// Teacher
+/* Teacher ----------------- */
 .teacher
 	h2
 		margin-top: 40px
@@ -512,7 +649,7 @@ dt
 			font-size: 20px
 			margin: 15px 0
 
-// Reviews
+/* Reviews ----------------- */
 .reviews
 	padding-bottom: 0
 	h2
@@ -566,7 +703,7 @@ dt
 	border: 1px solid #33cdff
 
 
-// Staticstic
+/* Staticstic ----------------- */
 .statistic
 	background: url(../img/bg_statistic.jpg)
 	background-size: cover
@@ -579,7 +716,7 @@ dt
 		font-size: 48px
 		text-transform: none
 
-// Cost
+/* Cost ----------------- */
 .cost
 	padding-bottom: 90px
 	h2
@@ -701,7 +838,7 @@ dt
 		&:hover
 			background: #00ccff * 0.9
 
-// Questions
+/* Questions ----------------- */
 .questions
 	h2
 		padding: 40px 0
@@ -721,7 +858,7 @@ dt
 	color: #4e4e4e
 	padding: 10px 15px
 
-// Contacts
+/* Contacts ----------------- */
 .contacts
 	background: url(../img/bg_contacts.jpg)
 	background-size: cover
@@ -730,7 +867,6 @@ dt
 		padding-top: 40px
 		padding-bottom: 80px
 		color: #fff
-
 
 .contacts_wrap
 	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)

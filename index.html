@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="utf-8"/>
@@ -19,12 +19,14 @@
 		<span class="cls"></span>
 		<span>
 			<ul class="sub-menu">
+				<li><a href="index.html"><img src="img/logo.png" height="54" width="140" alt=""></a></li>
 				<li><a href="#about_us">O нас</a></li>
 				<li><a href="#presents">Подарки</a></li>
 				<li><a href="#reviews">Отзывы</a></li>
-				<li><a href="#porgram">Программа курса</a></li>
+				<li><a href="#program">Программа курса</a></li>
 				<li><a href="#cost">Стоимость</a></li>
 				<li><a href="#contacts">Контакты</a></li>
+				<li class="block__main_text"><button iddiv="box_1" class="mymagicoverbox burger_button" href="#">Записаться на курс</button></li>
 				<li class="burger_text"><p>Звоните!</p><a href="tel:+38 095 05 35 007">+380950535007</a></li>
 			</ul>
 	  </span>
@@ -40,20 +42,20 @@
 		<nav id="navigation">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-3 col-md-3">
 						<a href="http://gagarin.dp.ua" class="logo"></a>
 					</div>
-					<div class="col-md-6">
+					<div class="col-xs-6 col-md-6">
 						<ul class="header_list">
 							<li><a href="#about_us">O нас</a></li>
 							<li><a href="#presents">Подарки</a></li>
 							<li><a href="#reviews">Отзывы</a></li>
-							<li><a href="#porgram">Программа курса</a></li>
+							<li><a href="#program">Программа курса</a></li>
 							<li><a href="#cost">Стоимость</a></li>
 							<li><a href="#contacts">Контакты</a></li>
 						</ul>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-3 col-md-3">
 						<button iddiv="box_1" class="mymagicoverbox nav_button" href="#">Бесплатная консультация</button>
 					</div>
 				</div>
@@ -63,6 +65,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
+					<img class="adaptive_logo" src="img/adaptive_logo.png" height="94" width="95" alt="">
 					<h1>Научись верстать сайты <br>и получи профессию front-end разработчика за 42 часа по самой доступной цене</h1>
 					<div class="button_header">
 						<button iddiv="box_2" class="mymagicoverbox button_gradient" href="#">Записаться на бесплатный урок</button>
@@ -261,6 +264,7 @@
 	</section>
 
 	<section class="bg_program">
+		<div id="program"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -347,6 +351,7 @@
 	</section>
 
 	<section class="present">
+		<div id="presents"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -387,6 +392,7 @@
 	</section>
 
 	<section class="bg_plus">
+		<div id="about_us"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -456,6 +462,7 @@
 	</section>
 
 	<section class="reviews">
+		<div id="reviews"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -570,12 +577,14 @@
 	</section>
 
 	<section class="cost">
+		<div id="cost"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<h2>Стоимость</h2>
 				</div>
 			</div>
+		<div class="cost_desktop">
 			<div class="row">
 				<div class="col-md-6"></div>
 				<div class="col-md-2 economy">
@@ -721,6 +730,50 @@
 				</div>
 			</div>
 		</div>
+		</div>
+		<div class="cost_adaprive">
+			<table>
+				<tr>
+					<th>Эконом</th>
+				</tr>
+				<tr>
+					<td>Личный наставник</td>
+					<td>Портфолио из 3-5 работ</td>
+					<td>Стажировка в Noosphere Engineering School</td>
+					<td><span>36 учебных часов</span></td>
+					<th>1 800 грн в месяц</th>
+				</tr>
+
+				<tr>
+					<th>Базовый</th>
+				</tr>
+				<tr>
+					<td>Личный наставник</td>
+					<td>Портфолио из 3-5 работ</td>
+					<td>Стажировка в Noosphere Engineering School</td>
+					<td>Помощь в трудоустройстве</td>
+					<td>Профессиональное оформление портфолио</td>
+					<td><span>42 учебных часа</span></td>
+					<th>2 100 грн в месяц</th>
+				</tr>
+
+				<tr>
+					<th>Расширенный</th>
+				</tr>
+				<tr>
+					<td>Личный наставник</td>
+					<td>Портфолио из 3-5 работ</td>
+					<td>Стажировка в Noosphere Engineering School</td>
+					<td>Помощь в трудоустройстве</td>
+					<td>Профессиональное оформление портфолио</td>
+					<td>Большой курс по работе в Adobe Photoshop</td>
+					<td>4 занятия IT-English Speaking club</td>
+					<td>Выпускной в Gagarin It-school</td>
+					<td><span>54 учебных часа</span></td>
+					<th>3 300 грн в месяц</th>
+				</tr>
+			</table>
+		</div>
 	</section>
 
 	<section class="present_form">
@@ -845,6 +898,7 @@
 	</section>
 
 	<section class="contacts">
+		<div id="contacts"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -877,7 +931,7 @@
 							<input type="email" name="contacts_email" placeholder="Ваш e-mail" id="email" required>
 							<input type="number" name="contacts_phone" placeholder="Ваш телефон" id="phone" required>
 							<textarea name="contacts_message" rows="1" wrap="off" placeholder="Сообщение"></textarea>
-							<button>получить консультацию</button>
+							<button>Получить консультацию</button>
 						</form>
 					</div>
 				</div>

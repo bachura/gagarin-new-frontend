@@ -5,6 +5,12 @@
 	.base:before{
 		display: none;
 	}
+	.header_list li a{
+		font-size: 11px;
+	}
+	.nav_button {
+		font-size: 11px;
+	}
 }
 
 /* Ipad Pro Devices, Desktops */
@@ -16,17 +22,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-/*	.logo_mobile {
-		display: block;
-		background: url(../img/logo_mobile.png);
-		margin-top: 25px;
-		width: 100px;
-		height: 38px;
-	}*/
 	video {
 		display: none;
 	}
-	.nav {
+	nav {
 		display: none;
 	}
 	.showNav {
@@ -37,21 +36,6 @@
 		z-index: 1000;
 		background: rgba(0,0,0,.4);
 		display: block;
-	}
-	/*.logo {
-		display: none;
-	}*/
-	.nav_button {
-		text-align: right;
-		float: right;
-		font-size: 11px;
-		text-transform: uppercase;
-		background: transparent;
-		padding: 8px 15px;
-		margin-top: 20px;
-	}
-	section {
-		padding: 20px 0;
 	}
 
 	/*Popup*/
@@ -95,17 +79,352 @@
 		padding: 5px 50px;
 		margin-top: 25px;
 	}
-	#box_3 p {
-		font-size: 10px
+	.adaptive_logo {
+		display: block;
+		margin: 70px auto;
+		margin-bottom: 30px;
 	}
-	#box_3 .btn_form {
-		margin-top: 10px;
+	h1 {
+		font-size: 20px;
+		margin: 0; 
 	}
+	h2 {
+		font-size: 14px;
+	}
+	.button_gradient {
+		padding: 25px 30px;
+		font-size: 12px;
+	}
+	.button_header p {
+		font-size: 16px;
+	}
+
+	/* About frontend */
+	.big_img_about {
+		display: none;
+	}
+	.about_frontend {
+		margin: 0 0 40px 0;
+	}
+	.about_frontend_info {
+		padding-top: 0;
+	}
+	.about_frontend_info h2 {
+		font-size: 14px;
+		padding-bottom: 15px;
+	}
+
+	/* Frontend info */
+	.frontend_info h2 {
+		font-size: 14px;
+	}
+	.frontend_info h5 {
+		font-size: 12px;
+	}
+	.frontend_info p {
+		font-size: 11px;
+	}
+
+	/* Сourse program */
+	.bg_program h2 {
+		margin-bottom: 40px;
+	}
+	.program_list h3 {
+		font-size: 11px;
+		letter-spacing: 0;
+	}
+	.program_list li i {
+		top: 5px;
+	}
+	.program_list dl {
+		font-size: 11px;
+	}
+	.flipIn:nth-of-type(1) {
+		animation-delay: 0.2s;
+	}
+	.flipIn:nth-of-type(2) {
+		animation-delay: 0.25s;
+	}
+	.flipIn:nth-of-type(3) {
+		animation-delay: 0.35s;
+	}
+	.flipIn:nth-of-type(4) {
+		animation-delay: 0.4s;
+	}
+	.flipIn:nth-of-type(5) {
+		animation-delay: 0.45s;
+	}
+	.button_program {
+		padding-bottom: 0;
+	}
+
+	/* Present */
+	.present {
+		padding-bottom: 40px;
+	}
+	.present h2 {
+		padding-top: 0;
+	}
+	.present_img {
+		width: 120px;
+		height: 130px;
+	}
+	.present_img img {
+		width: 119px;
+		height: 130px;
+	}
+	.present h5 {
+		font-size: 12px;
+		margin: 5px 0;
+	}
+	.present p {
+		font-size: 11px;
+		padding: 10px 0 20px 0;
+	}
+
+	/* About us */
+	.bg_plus {
+		padding-bottom: 0;
+	}
+	.bg_plus h2 {
+		padding: 0 0 40px 0;
+	}
+	.block_plus {
+		padding: 0 10px;
+	}
+	.block_plus h5 {
+		font-size: 18px;
+		margin: 10px 0;
+	}
+	.block_plus p {
+		font-size: 12px;
+		padding-bottom: 40px;
+	}
+
+	/* Teacher */
+	.teacher h2 {
+		margin: 0 0 20px 0;
+	}
+	.teacher_img {
+		text-align: center;
+	}
+	.teacher_img img {
+		width: 166px;
+		height: 166px;
+	}
+	.teacher_info {
+		text-align: center;
+		padding-top: 20px;
+	}
+	.teacher_info h2 {
+		font-size: 18px;
+		text-align: center;
+	}
+	.teacher_info span {
+		font-size: 14px;
+	}
+	.teacher_info p {
+		font-size: 11px;
+	}
+
+	/* Reviews */
+	.top_reviews .nav_button {
+		margin-top: 16px;
+	}
+	.top_reviews_text {
+		padding-top: 280px;
+	}
+	.top_reviews_text h2 {
+		font-size: 22px;
+	}
+	.reviews_wrap:before {
+		content: "";
+	}
+	.reviews_wrap {
+		text-align: center;
+		margin: 0 auto;
+		max-width: 100%;
+		background: none;
+		box-shadow: none;
+	}
+	.reviews_img {
+		float: none;
+	}
+	.reviews_img img {
+		border-radius: 0;
+		margin: 0;
+	}
+	.reviews_text h4 {
+		font-size: 18px;
+		padding: 10px 0;
+	}
+	.reviews_text span {
+		font-size: 12px;
+	}
+	.reviews_text p {
+		font-size: 11px;
+		padding: 0 10px;
+		padding: 10px 0 40px 0;
+	}
+
+	/* Statistic */
+	.statistic h1 {
+		font-size: 18px;
+	}
+
+	/* Cost */
+	.cost_desktop {
+		display: none;
+	}
+	.cost_adaptive {
+		display: block;
+	}
+	.cost {
+		padding-bottom: 40px;
+	}
+	.cost h2{
+		padding: 0 0 20px 0;
+	}
+
+	/* Заставьте таблицу больше не вести себя как таблица */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+	/* Скройте заголовки таблицы (но в целях доступности не с display: none;) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	th {
+		background: #61abe1;
+		color: #fff;
+		padding: 15px 0;
+		font-size: 18px;
+	}
+
+	td { 
+		/* Поведение как у «строки» */
+		border: none;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		font-size: 12px;
+		color: #4f4f4f;
+		padding: 10px 0;
+	}
+	td:nth-child(even) {
+		background: #f8fcff;
+	}
+	td:nth-child(odd) {
+		background: #eaf9ff;
+	}
+	td span {
+		font-size: 14px;
+		font-family: "OpenSans-Bold", sans-serif;
+	}
+	tr:nth-child(odd) {
+		padding-top: 20px;
+	}
+
+	td:before { 
+		/* Теперь как у заголовка таблицы */
+		position: absolute;
+		/* Значения top/left имитируют отступ */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 9px; 
+		white-space: nowrap;
+	}
+
+	/* Present form */
+	.present_form h2 {
+		padding: 0 0 40px 0;
+	}
+	.present_form img {
+		width: 450px;
+		height: 270px;
+	}
+	.present_form p {
+		font-size: 14px;
+		text-align: center;
+		margin-top: 40px;
+	}
+	.present_form input {
+		width: 100%;
+		padding: 10px;
+	}
+	.present_form button {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 40px;
+	}
+
+	/* Questions */
+	.questions h2 {
+		padding: 0 0 40px 0;
+	}
+	.headerAcc {
+		font-family: "OpenSans-Bold", sans-serif;
+		font-size: 12px;
+		line-height: 1.1;
+		padding: 3px 15px;
+		text-align: center;
+	}
+		
+	/* Contacts */
+	.contacts h2 {
+		padding: 0 0 40px 0;
+	}
+	.bg_contacts .nav_button {
+		margin-top: 16px;
+	}
+	.top_contacts h2 {
+		font-size: 22px;
+	}
+	.top_contacts {
+		padding-top: 200px;
+	}
+	.top_contacts p {
+		font-size: 11px;
+		padding-top: 20px;
+	}
+	.contacts_wrap {
+		box-shadow: none;
+		position: inherit;
+	}
+	.contacts_wrap_form {
+		min-height: 465px;
+	}
+	.contacts_wrap_form_block {
+		padding: 40px 0 40px 0;
+	}
+	.contacts_wrap_form_block p {
+		text-align: center;
+	}
+	.contacts_form input {
+		width: 100%;
+		padding-top: 0;
+	}
+	.contacts_form textarea {
+		width: 100%;
+		padding-top: 10px;
+	}
+	.contacts_form button {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.contacts_adaptive {
+		padding: 0;
+	}
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
 
 }
 
@@ -134,6 +453,15 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 769px) {
+	.present_img {
+		width: 240px;
+		height: 240px;
+	}
+	.present_img img{
+		width: 240px;
+		height: 240px;
+	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -141,18 +469,27 @@
 	video{
 		display: block;
 	}
-	.nav{
+	nav{
 		display: block;
 	}
 	.open {
 		display: none;
 	}
-	/*.logo {
+	.adaptive_logo {
+		display: none;
+	}
+	.big_img_about {
 		display: block;
 	}
-	.logo_modile {
+	table {
 		display: none;
-	}*/
+	}
+	.cost_desktop {
+		display: block;
+	}
+	.cost_adaptive {
+		display: none;
+	}
 }
 
 /* Large Devices, Wide Screens */
@@ -162,36 +499,4 @@
 
 @media only screen and (max-width: 500px), (min-device-width: 768px) and (max-device-width: 1024px) {
 
-		/* Заставьте таблицу больше не вести себя как таблица */
-		table, thead, tbody, th, td, tr { 
-			display: block; 
-		}
-	
-		/* Скройте заголовки таблицы (но в целях доступности не с display: none;) */
-		thead tr { 
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
-	
-		tr { border: 1px solid #ccc; }
-	
-		td { 
-			/* Поведение как у «строки» */
-			border: none;
-			border-bottom: 1px solid #eee; 
-			position: relative;
-			padding-left: 50%; 
-		}
-	
-		td:before { 
-			/* Теперь как у заголовка таблицы */
-			position: absolute;
-			/* Значения top/left имитируют отступ */
-			top: 6px;
-			left: 6px;
-			width: 45%; 
-			padding-right: 10px; 
-			white-space: nowrap;
-		}
 	}
