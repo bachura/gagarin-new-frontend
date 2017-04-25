@@ -15,7 +15,7 @@ $phone = htmlspecialchars($phone);
 $phone = urldecode($phone);
 $phone = trim($phone);
 
-if (mail("hello@gagarin.dp.ua", "Gagarin frontend Запись на обучение", "Имя: ".$name. "\nE-mail: ".$email. "\nТелефон " .$phone , "From: hello@gagarin.dp.ua \r\n"))
+if (mail("hello@gagarin.dp.ua", "Gagarin frontend Оплата обучения", "Тариф: "."Базовый". "\n\nИмя: ".$name. "\nE-mail: ".$email. "\nТелефон " .$phone , "From: hello@gagarin.dp.ua \r\n"))
 	{	echo "Сообщение отправлено, все хорошо!";  
 		header("Location: ./index.html");
 	} else { 
@@ -24,3 +24,5 @@ if (mail("hello@gagarin.dp.ua", "Gagarin frontend Запись на обучен
 
 
 ?>
+
+

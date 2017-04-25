@@ -76,15 +76,36 @@ $(document).ready(function() {
 	
 
 // Acordeon 	
-	$('#acordeon .headerAcc').click(function() {			
-		if(!$(this).siblings('#acordeon .contentAcc').is(":visible")){
-			$('#acordeon').find('.contentAcc').slideUp();
-			$('#acordeon').find('.headerAcc').removeClass("selected");
-			$(this).siblings('.contentAcc').slideDown();
-			$(this).addClass("selected");
-		}			
-		return false;
-	});	
+	// $('#acordeon .headerAcc').click(function() {			
+	// 	if(!$(this).siblings('#acordeon .contentAcc').is(":visible")){
+	// 		$('#acordeon').find('.contentAcc').slideUp();
+	// 		$('#acordeon').find('.headerAcc').Class("selected");
+	// 		$(this).siblings('.contentAcc').slideDown();
+	// 		$(this).addClass("selected");
+	// 	}
+	// 	return false;
+	// });
+
+	$('.headerAcc').on("click", function(){
+   if($(this).hasClass('active')){
+    $(this).removeClass("active");
+    $(this).next('.contentAcc').slideUp(200);
+   }else{
+    $('.headerAcc').removeClass("active");
+    $(this).addClass("active");
+    $('.contentAcc').slideUp(200);
+    $(this).next('.contentAcc').slideDown(200);
+   }
+	})
+	
+	// setTimeout(function() {
+	// 	$("#openStart").css("display","block");
+	// 	return false;
+	// }, 100);
 
 
 }); 
+
+// Pop-up form after 7 seconds
+var delay_popup = 12000;
+setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);

@@ -15,13 +15,7 @@ $phone = htmlspecialchars($phone);
 $phone = urldecode($phone);
 $phone = trim($phone);
 
-$message = $_POST['message'];
-$message = htmlspecialchars($message);
-$message = urldecode($message);
-$message = trim($message);
-
-
-if (mail("hello@gagarin.dp.ua", "Gagarin frontend Запись на бесплатный урок", "Имя: ".$name. "\nE-mail: ".$email. "\nТелефон " .$phone. "\nСообщение: " .$message , "From: hello@gagarin.dp.ua \r\n"))
+if (mail("hello@gagarin.dp.ua", "Gagarin frontend Запись на бесплатный урок", "Имя: ".$name. "\nE-mail: ".$email. "\nТелефон " .$phone , "From: hello@gagarin.dp.ua \r\n"))
 	{	echo "Сообщение отправлено, все хорошо!";  
 		header("Location: ./index.html");
 	} else { 
